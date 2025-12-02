@@ -5,7 +5,7 @@ def get_code(curr, direction, value):
         else: curr = (curr + 1) % 100
         if curr == 0: hits += 1
     return curr, hits
-def load_codes(path="day1.txt"):
+def load_codes(path="day1/day1.txt"):
     with open(path, "r") as f:
         return [line.strip() for line in f if line.strip()]
 def main():
